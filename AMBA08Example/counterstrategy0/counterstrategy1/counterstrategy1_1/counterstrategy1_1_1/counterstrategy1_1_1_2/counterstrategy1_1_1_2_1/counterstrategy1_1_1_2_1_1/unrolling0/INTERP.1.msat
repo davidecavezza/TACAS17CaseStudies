@@ -1,0 +1,70 @@
+VAR hmaster0__S16 : boolean
+VAR hmaster0__S8 : boolean
+VAR hmaster0__S9 : boolean
+VAR hmaster0__S11 : boolean
+VAR hbusreq1__S9 : boolean
+VAR hbusreq1__S8 : boolean
+VAR hbusreq1__S7 : boolean
+VAR hbusreq1__S6 : boolean
+VAR hbusreq1__S5 : boolean
+VAR hbusreq1__S4 : boolean
+VAR hmaster0__S12 : boolean
+VAR hmaster0__S13 : boolean
+VAR hmaster0__S10 : boolean
+VAR hmaster0__S17 : boolean
+VAR hmaster0__S14 : boolean
+VAR hmaster0__S15 : boolean
+VAR hmaster0__S6 : boolean
+VAR hmaster0__S7 : boolean
+VAR hmaster0__S4 : boolean
+VAR hmaster0__S5 : boolean
+VAR hbusreq1__S11 : boolean
+VAR hbusreq1__S10 : boolean
+VAR hbusreq1__S13 : boolean
+VAR hbusreq1__S12 : boolean
+VAR hbusreq1__S15 : boolean
+VAR hbusreq1__S14 : boolean
+VAR hbusreq1__S17 : boolean
+VAR hbusreq1__S16 : boolean
+DEFINE def_1250 := !(hmaster0__S9)
+DEFINE def_1278 := !(hmaster0__S8)
+DEFINE def_1311 := !(hmaster0__S17)
+DEFINE def_1438 := !(hmaster0__S7)
+DEFINE def_1466 := !(hmaster0__S6)
+DEFINE def_1498 := !(hmaster0__S5)
+DEFINE def_1526 := !(hmaster0__S4)
+DEFINE def_1558 := !(hmaster0__S13)
+DEFINE def_1589 := !(hmaster0__S15)
+DEFINE def_1616 := !(hmaster0__S12)
+DEFINE def_1648 := !(hmaster0__S10)
+DEFINE def_1676 := !(hmaster0__S14)
+DEFINE def_1708 := !(hmaster0__S11)
+DEFINE def_1737 := !(hmaster0__S16)
+DEFINE def_3110 := (def_1737 & def_1708)
+DEFINE def_3111 := (def_3110 & def_1676)
+DEFINE def_3112 := (def_3111 & def_1648)
+DEFINE def_3113 := (def_3112 & def_1616)
+DEFINE def_3114 := (def_3113 & def_1589)
+DEFINE def_3115 := (def_3114 & def_1558)
+DEFINE def_3116 := (def_3115 & def_1526)
+DEFINE def_3117 := (def_3116 & def_1498)
+DEFINE def_3118 := (def_3117 & def_1466)
+DEFINE def_3119 := (def_3118 & def_1438)
+DEFINE def_3120 := (def_3119 & def_1311)
+DEFINE def_3121 := (def_3120 & def_1278)
+DEFINE def_3122 := (def_3121 & def_1250)
+DEFINE def_3123 := (def_3122 & hbusreq1__S9)
+DEFINE def_3124 := (def_3123 & hbusreq1__S8)
+DEFINE def_3125 := (def_3124 & hbusreq1__S17)
+DEFINE def_3126 := (def_3125 & hbusreq1__S7)
+DEFINE def_3127 := (def_3126 & hbusreq1__S6)
+DEFINE def_3128 := (def_3127 & hbusreq1__S5)
+DEFINE def_3129 := (def_3128 & hbusreq1__S4)
+DEFINE def_3130 := (def_3129 & hbusreq1__S13)
+DEFINE def_3131 := (def_3130 & hbusreq1__S15)
+DEFINE def_3132 := (def_3131 & hbusreq1__S12)
+DEFINE def_3133 := (def_3132 & hbusreq1__S10)
+DEFINE def_3134 := (def_3133 & hbusreq1__S14)
+DEFINE def_3135 := (def_3134 & hbusreq1__S11)
+DEFINE def_3136 := (def_3135 & hbusreq1__S16)
+FORMULA def_3136

@@ -1,0 +1,16 @@
+!hmaster0
+!hmastlock
+start
+decide
+!locked
+hgrant0
+!hgrant1
+!busreq
+!stateA1
+!stateG2
+!stateG2_0
+!stateG2_1
+!stateG3_0
+!stateG3_1
+!stateG3_2
+!stateG10_1

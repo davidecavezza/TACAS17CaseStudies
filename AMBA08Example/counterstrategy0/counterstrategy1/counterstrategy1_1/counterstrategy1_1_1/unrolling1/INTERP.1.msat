@@ -1,0 +1,25 @@
+VAR hbusreq4__S6 : boolean
+VAR hbusreq4__S7 : boolean
+VAR hbusreq4__S4 : boolean
+VAR hmaster2__S5 : boolean
+VAR hbusreq4__S8 : boolean
+VAR hbusreq4__S5 : boolean
+VAR hmaster2__S7 : boolean
+VAR hmaster2__S8 : boolean
+VAR hmaster2__S4 : boolean
+VAR hmaster2__S6 : boolean
+DEFINE def_750 := !(hmaster2__S8)
+DEFINE def_920 := !(hmaster2__S7)
+DEFINE def_951 := !(hmaster2__S6)
+DEFINE def_982 := !(hmaster2__S5)
+DEFINE def_1013 := !(hmaster2__S4)
+DEFINE def_2017 := (def_1013 & def_982)
+DEFINE def_2018 := (def_2017 & def_951)
+DEFINE def_2019 := (def_2018 & def_920)
+DEFINE def_2020 := (def_2019 & def_750)
+DEFINE def_2021 := (def_2020 & hbusreq4__S8)
+DEFINE def_2022 := (def_2021 & hbusreq4__S7)
+DEFINE def_2023 := (def_2022 & hbusreq4__S6)
+DEFINE def_2024 := (def_2023 & hbusreq4__S5)
+DEFINE def_2025 := (def_2024 & hbusreq4__S4)
+FORMULA def_2025

@@ -1,0 +1,4 @@
+!stateA1
+((hmaster0)&(!hmaster1)&(hmaster2))|!hbusreq5
+hmaster2 | !hbusreq6
+hmaster0 | !hbusreq3

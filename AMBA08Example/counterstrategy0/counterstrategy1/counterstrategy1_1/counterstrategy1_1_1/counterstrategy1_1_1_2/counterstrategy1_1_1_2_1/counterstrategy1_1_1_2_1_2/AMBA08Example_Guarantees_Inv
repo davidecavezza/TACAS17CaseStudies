@@ -1,0 +1,3 @@
+((!stateA1)&((!hmastlock)|(hburst0)|(hburst1)))->(X(!stateA1))
+(!hready)->(X(!start))
+(X(!start))->(((hmaster0)&(hmaster1)&(hmaster2))<->((X(hmaster0))&(X(hmaster1))&(X(hmaster2))))

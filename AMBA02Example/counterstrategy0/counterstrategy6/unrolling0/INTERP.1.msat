@@ -1,0 +1,10 @@
+VAR hmaster0__S2 : boolean
+VAR hready__S2 : boolean
+VAR hbusreq1__S3 : boolean
+VAR hbusreq1__S2 : boolean
+DEFINE def_88 := !(hmaster0__S2)
+DEFINE def_98 := !(hready__S2)
+DEFINE def_317 := (def_98 & def_88)
+DEFINE def_318 := (def_317 & hbusreq1__S3)
+DEFINE def_319 := (def_318 & hbusreq1__S2)
+FORMULA def_319

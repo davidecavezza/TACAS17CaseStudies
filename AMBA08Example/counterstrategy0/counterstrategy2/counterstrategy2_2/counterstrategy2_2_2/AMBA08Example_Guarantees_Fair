@@ -1,0 +1,1 @@
+((hmaster0)&(hmaster1)&(!hmaster2))|!hbusreq3

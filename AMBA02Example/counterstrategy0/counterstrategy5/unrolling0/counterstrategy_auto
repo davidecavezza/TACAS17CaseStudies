@@ -1,0 +1,12 @@
+VAR
+hgrant1__S2,hgrant1__S1,start__S2,hbusreq1__S0,hbusreq1__S1,hbusreq1__S2,hready__S0,hready__S1,hready__S2,hlock0__S2,hlock0__S0,hlock0__S1,hbusreq0__S1,hbusreq0__S0,hbusreq0__S2,hburst0__S1,hlock1__S2,hlock1__S1,hburst1__S0,hmastlock__S1,hmastlock__S2,hburst1__S2,stateA1__S2,hburst1__S1,hburst0__S2,hburst0__S0,hlock1__S0: BOOLEAN
+FORMULA
+(!hready__S0
+)&(!hbusreq0__S0
+)&(!hlock0__S0
+)&(!hbusreq1__S0
+)&(!hlock1__S0
+)&(!hburst0__S0
+)&(!hburst1__S0
+)&( hlock0__S0 -> hbusreq0__S0) & ( hlock0__S1 -> hbusreq0__S1) & ( hlock0__S2 -> hbusreq0__S2)&( hlock1__S0 -> hbusreq1__S0) & ( hlock1__S1 -> hbusreq1__S1) & ( hlock1__S2 -> hbusreq1__S2)&( ! hbusreq1__S0 | ( hready__S1 | ! hbusreq1__S1 )) & ( ! hbusreq1__S1 | ( hready__S2 | ! hbusreq1__S2 )) & ( ! hbusreq1__S2 | ( hready__S2 | ! hbusreq1__S2 ))&((!stateA1__S2
+))&!hgrant1__S2 & hready__S2 & !hmastlock__S2 & hbusreq1__S2 & !start__S2 & hlock1__S2 & hbusreq0__S2 & hburst0__S2 & hburst1__S2 & hlock0__S2 & !hgrant1__S1 & hready__S1 & !hmastlock__S1 & hbusreq1__S1 & hlock1__S1 & hbusreq0__S1 & hburst0__S1 & hburst1__S1 & hlock0__S1

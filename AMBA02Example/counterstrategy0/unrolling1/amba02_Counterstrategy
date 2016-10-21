@@ -1,0 +1,29 @@
+# Path S0 -> S1 -> S2_1 -> S3_1 -> loop (S2 -> S3)
+# Last index or two indices are state indices. stateG2_0, stateG10_1 and stateG3_x are ids of LTL variables.
+
+VAR
+hready_0, hbusreq0_0, hlock0_0, hbusreq1_0, hlock1_0, hburst0_0, hburst1_0, hmastlock_0: BOOLEAN
+hready_1, hbusreq0_1, hlock0_1, hbusreq1_1, hlock1_1, hburst0_1, hburst1_1, hmastlock_1: BOOLEAN
+hready_2_1, hbusreq0_2_1, hlock0_2_1, hbusreq1_2_1, hlock1_2_1, hburst0_2_1, hburst1_2_1, hmastlock_2_1: BOOLEAN
+hready_3_1, hbusreq0_3_1, hlock0_3_1, hbusreq1_3_1, hlock1_3_1, hburst0_3_1, hburst1_3_1, hmastlock_3_1: BOOLEAN
+stateA1_2_1, stateA1_3_1: BOOLEAN
+hready_2, hbusreq0_2, hlock0_2, hbusreq1_2, hlock1_2, hburst0_2, hburst1_2, hmastlock_2: BOOLEAN
+hready_3, hbusreq0_3, hlock0_3, hbusreq1_3, hlock1_3, hburst0_3, hburst1_3, hmastlock_3: BOOLEAN
+stateA1_2, stateA1_3: BOOLEAN
+
+FORMULA
+# Initial condition
+!hready_0 & !hbusreq0_0 & !hlock0_0 & !hbusreq1_0 & !hlock1_0 & !hburst0_0 & !hburst1_0 &
+# Invariants
+(hlock0_0 -> hbusreq0_0) & (hlock0_1 -> hbusreq0_1) & (hlock0_2_1 -> hbusreq0_2_1) & (hlock0_3_1 -> hbusreq0_3_1) & (hlock0_2 -> hbusreq0_2) & (hlock0_3 -> hbusreq0_3) &
+(hlock1_0 -> hbusreq1_0) & (hlock1_1 -> hbusreq1_1) & (hlock1_2_1 -> hbusreq1_2_1) & (hlock1_3_1 -> hbusreq1_3_1) & (hlock1_2 -> hbusreq1_2) & (hlock1_3 -> hbusreq1_3) &
+# Fairness
+(!stateA1_2 | !stateA1_3) &
+
+# Valuations
+!hready_0 & !hbusreq0_0 & !hlock0_0 & !hbusreq1_0 & !hlock1_0 & !hburst0_0 & !hburst1_0 & !hmastlock_0 &
+!hready_1 & hbusreq0_1 & hlock0_1 & hbusreq1_1 & hlock1_1 & hburst0_1 & hburst1_1 & !hmastlock_1 &
+!hready_2_1 & hbusreq0_2_1 & hlock0_2_1 & hbusreq1_2_1 & hlock1_2_1 & hburst0_2_1 & hburst1_2_1 & !hmastlock_2_1 &
+!hready_3_1 & hbusreq0_3_1 & hlock0_3_1 & hbusreq1_3_1 & hlock1_3_1 & hburst0_3_1 & hburst1_3_1 & hmastlock_3_1 &
+!hready_2 & hbusreq0_2 & hlock0_2 & hbusreq1_2 & hlock1_2 & hburst0_2 & hburst1_2 & !hmastlock_2 &
+!hready_3 & hbusreq0_3 & hlock0_3 & hbusreq1_3 & hlock1_3 & hburst0_3 & hburst1_3 & hmastlock_3

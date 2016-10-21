@@ -1,0 +1,14 @@
+VAR
+hgrant1__S2,hgrant1__S1,start__S2,hburst0__S20,hbusreq1__S0,hbusreq1__S1,hbusreq1__S2,hmastlock__S20,stateA1__S20,hbusreq0__S18,hready__S0,hready__S1,hready__S2,hready__S18,hlock0__S2,hlock0__S0,hlock0__S1,hbusreq0__S1,hbusreq0__S0,hbusreq0__S2,start__S18,hlock1__S18,hbusreq1__S18,hready__S20,hbusreq0__S20,hgrant1__S20,hburst0__S1,hlock1__S2,hlock1__S1,hburst1__S0,hmastlock__S1,hmastlock__S2,hlock0__S18,hburst0__S18,stateA1__S18,hburst1__S2,hlock1__S20,stateA1__S2,hburst1__S1,hgrant1__S18,hburst0__S2,hburst0__S0,hlock1__S0,hmastlock__S18,hbusreq1__S20,hburst1__S20,start__S20,hburst1__S18,hlock0__S20: BOOLEAN
+FORMULA
+(!hready__S0
+)&(!hbusreq0__S0
+)&(!hlock0__S0
+)&(!hbusreq1__S0
+)&(!hlock1__S0
+)&(!hburst0__S0
+)&(!hburst1__S0
+)&( hlock0__S0 -> hbusreq0__S0) & ( hlock0__S0 -> hbusreq0__S0) & ( hlock0__S1 -> hbusreq0__S1) & ( hlock0__S18 -> hbusreq0__S18) & ( hlock0__S20 -> hbusreq0__S20) & ( hlock0__S2 -> hbusreq0__S2)&( hlock1__S0 -> hbusreq1__S0) & ( hlock1__S0 -> hbusreq1__S0) & ( hlock1__S1 -> hbusreq1__S1) & ( hlock1__S18 -> hbusreq1__S18) & ( hlock1__S20 -> hbusreq1__S20) & ( hlock1__S2 -> hbusreq1__S2)&( ! hbusreq1__S0 | ( hready__S1 | ! hbusreq1__S1 )) & ( ! hbusreq1__S0 | ( hready__S1 | ! hbusreq1__S1 )) & ( ! hbusreq1__S1 | ( hready__S18 | ! hbusreq1__S18 )) & ( ! hbusreq1__S18 | ( hready__S20 | ! hbusreq1__S20 )) & ( ! hbusreq1__S20 | ( hready__S2 | ! hbusreq1__S2 )) & ( ! hbusreq1__S2 | ( hready__S18 | ! hbusreq1__S18 ))&((!stateA1__S18
+) | (!stateA1__S20
+) | (!stateA1__S2
+))&!hgrant1__S18 & hready__S18 & hbusreq1__S18 & !start__S18 & hburst0__S18 & hburst1__S18 & hbusreq0__S18 & hmastlock__S18 & hlock1__S18 & hlock0__S18 & !hgrant1__S1 & hready__S1 & !hmastlock__S1 & hburst0__S1 & hburst1__S1 & hbusreq0__S1 & hbusreq1__S1 & hlock1__S1 & hlock0__S1 & !hgrant1__S20 & hready__S20 & hbusreq1__S20 & hburst1__S20 & hburst0__S20 & start__S20 & hbusreq0__S20 & hmastlock__S20 & hlock1__S20 & hlock0__S20 & !hgrant1__S2 & hready__S2 & !hmastlock__S2 & !start__S2 & hburst0__S2 & hburst1__S2 & hbusreq0__S2 & hbusreq1__S2 & hlock1__S2 & hlock0__S2

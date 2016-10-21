@@ -1,0 +1,10 @@
+hlock0->hbusreq0
+hlock1->hbusreq1
+hlock2->hbusreq2
+hlock3->hbusreq3
+hlock4->hbusreq4
+hlock5->hbusreq5
+hlock6->hbusreq6
+hlock7->hbusreq7
+(!hmaster2 & hbusreq7) -> X(!hbusreq7)
+(!hmaster2 & hbusreq4) -> X(!hbusreq4)

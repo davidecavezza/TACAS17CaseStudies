@@ -1,0 +1,10 @@
+VAR hbusreq4__S4 : boolean
+VAR hbusreq4__S5 : boolean
+VAR hmaster2__S5 : boolean
+VAR hmaster2__S4 : boolean
+DEFINE def_396 := !(hmaster2__S4)
+DEFINE def_403 := !(hmaster2__S5)
+DEFINE def_1379 := (def_403 & hbusreq4__S5)
+DEFINE def_1380 := (def_1379 & hbusreq4__S4)
+DEFINE def_1381 := (def_1380 & def_396)
+FORMULA def_1381

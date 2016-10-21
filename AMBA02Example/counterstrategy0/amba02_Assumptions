@@ -1,0 +1,11 @@
+!hready
+!hbusreq0
+!hlock0
+!hbusreq1
+!hlock1
+!hburst0
+!hburst1
+G(hlock0->hbusreq0)
+G(hlock1->hbusreq1)
+G(F(!stateA1))
+G(F(!hbusreq1 | hready))

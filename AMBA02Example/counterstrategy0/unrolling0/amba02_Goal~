@@ -1,0 +1,30 @@
+# Path S0 -> S1 -> loop (S2 -> S3)
+# Last index or two indices are state indices. stateG2_0, stateG10_1 and stateG3_x are ids of LTL variables.
+
+VAR
+start_0, decide_0, locked_0, hmaster0_0, hmastlock_0, hgrant0_0, hgrant1_0, busreq_0, stateA1_0, stateG2_0, stateG2_0_0, stateG2_1_0, stateG3_0_0, stateG3_1_0, stateG3_2_0, stateG10_1_0, hbusreq1_0, hburst0_0, hburst1_0: BOOLEAN
+start_1, decide_1, locked_1, hmaster0_1, hmastlock_1, hgrant0_1, hgrant1_1, busreq_1, stateA1_1, stateG2_1, stateG2_0_1, stateG2_1_1, stateG3_0_1, stateG3_1_1, stateG3_2_1, stateG10_1_1, hbusreq1_1, hburst0_1, hburst1_1: BOOLEAN
+start_2, decide_2, locked_2, hmaster0_2, hmastlock_2, hgrant0_2, hgrant1_2, busreq_2, stateA1_2, stateG2_2, stateG2_0_2, stateG2_1_2, stateG3_0_2, stateG3_1_2, stateG3_2_2, stateG10_1_2, hbusreq1_2, hburst0_2, hburst1_2: BOOLEAN
+start_3, decide_3, locked_3, hmaster0_3, hmastlock_3, hgrant0_3, hgrant1_3, busreq_3, stateA1_3, stateG2_3, stateG2_0_3, stateG2_1_3, stateG3_0_3, stateG3_1_3, stateG3_2_3, stateG10_1_3, hbusreq1_3, hburst0_3, hburst1_3: BOOLEAN
+
+FORMULA
+# Initial conditions
+start_0 & decide_0 & !locked_0 & !hmaster0_0 & !hmastlock_0 & hgrant0_0 & !hgrant1_0 & !busreq_0 & !stateA1_0 & !stateG2_0 & !stateG2_0_0 & !stateG2_1_0 & !stateG3_0_0 & !stateG3_1_0 & !stateG3_2_0 & !stateG10_1_0 &
+
+# Invariants
+((!stateA1_0 & (!hmastlock_0 | hburst0_0 | hburst1_0)) -> !stateA1_1) &
+((!stateA1_1 & (!hmastlock_1 | hburst0_1 | hburst1_1)) -> !stateA1_2) &
+((!stateA1_2 & (!hmastlock_2 | hburst0_2 | hburst1_2)) -> !stateA1_3) &
+((!stateA1_3 & (!hmastlock_3 | hburst0_3 | hburst1_3)) -> !stateA1_2) &
+
+(!hready_0 -> !start_1) &
+(!hready_1 -> !start_2) &
+(!hready_2 -> !start_3) &
+(!hready_3 -> !start_2) &
+
+(!start_1 -> (hmaster0_0 <-> hmaster0_1)) &
+(!start_2 -> (hmaster0_1 <-> hmaster0_2)) &
+(!start_3 -> (hmaster0_2 <-> hmaster0_3)) &
+(!start_2 -> (hmaster0_3 <-> hmaster0_2)) &
+
+(

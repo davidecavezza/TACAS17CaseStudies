@@ -1,0 +1,30 @@
+VAR hmaster0__S8 : boolean
+VAR hmaster0__S9 : boolean
+VAR hmaster0__S5 : boolean
+VAR hbusreq1__S9 : boolean
+VAR hbusreq1__S8 : boolean
+VAR hbusreq1__S7 : boolean
+VAR hbusreq1__S6 : boolean
+VAR hbusreq1__S5 : boolean
+VAR hbusreq1__S4 : boolean
+VAR hmaster0__S7 : boolean
+VAR hmaster0__S4 : boolean
+VAR hmaster0__S6 : boolean
+DEFINE def_725 := !(hmaster0__S9)
+DEFINE def_748 := !(hmaster0__S8)
+DEFINE def_883 := !(hmaster0__S7)
+DEFINE def_909 := !(hmaster0__S6)
+DEFINE def_944 := !(hmaster0__S5)
+DEFINE def_969 := !(hmaster0__S4)
+DEFINE def_1951 := (def_969 & def_944)
+DEFINE def_1952 := (def_1951 & def_909)
+DEFINE def_1953 := (def_1952 & def_883)
+DEFINE def_1954 := (def_1953 & def_748)
+DEFINE def_1955 := (def_1954 & def_725)
+DEFINE def_1956 := (def_1955 & hbusreq1__S9)
+DEFINE def_1957 := (def_1956 & hbusreq1__S8)
+DEFINE def_1958 := (def_1957 & hbusreq1__S7)
+DEFINE def_1959 := (def_1958 & hbusreq1__S6)
+DEFINE def_1960 := (def_1959 & hbusreq1__S5)
+DEFINE def_1961 := (def_1960 & hbusreq1__S4)
+FORMULA def_1961

@@ -1,0 +1,11 @@
+!hready
+!hbusreq0
+!hlock0
+!hbusreq1
+!hlock1
+!hbusreq2
+!hlock2
+!hbusreq3
+!hlock3
+!hburst0
+!hburst1

@@ -1,0 +1,28 @@
+VAR
+hmaster0__S5,hgrant1__S22,hgrant1__S0,hburst0__S12,hgrant1__S5,start__S22,start__S0,hburst1__S4,start__S4,hburst0__S22,hbusreq1__S5,stateG3_0__S0,start__S9,hbusreq0__S10,hbusreq0__S12,hbusreq1__S10,hmaster0__S4,hbusreq1__S9,stateA1__S22,hready__S0,hbusreq0__S5,hready__S4,hready__S5,hready__S9,hgrant1__S4,stateA1__S12,hburst1__S22,hmastlock__S12,hmaster0__S22,hmastlock__S10,hbusreq0__S9,hbusreq1__S12,stateG3_1__S0,start__S10,hgrant1__S9,start__S12,stateG3_2__S0,hready__S22,hmaster0__S0,busreq__S0,hburst0__S5,hmaster0__S9,hmastlock__S4,hmastlock__S5,hburst1__S0,hmastlock__S0,decide__S0,hburst1__S5,locked__S0,stateG10_1__S0,hburst1__S9,start__S5,hmastlock__S9,hgrant1__S12,stateA1__S9,hgrant0__S0,hburst0__S9,hmaster0__S10,hgrant1__S10,stateG2__S0,stateA1__S0,stateG2_1__S0,hmaster0__S12,stateA1__S5,hmastlock__S22,hburst0__S0,stateG2_0__S0,hburst1__S12,hburst0__S4,stateA1__S4,hready__S12,hburst0__S10,hready__S10,hburst1__S10,stateA1__S10: BOOLEAN
+FORMULA
+(!hmaster0__S0
+)&(!hmastlock__S0
+)&(start__S0
+)&(decide__S0
+)&(!locked__S0
+)&(hgrant0__S0
+)&(!hgrant1__S0
+)&(!busreq__S0
+)&(!stateA1__S0
+)&(!stateG2__S0
+)&(!stateG2_0__S0
+)&(!stateG2_1__S0
+)&(!stateG3_0__S0
+)&(!stateG3_1__S0
+)&(!stateG3_2__S0
+)&(!stateG10_1__S0
+)&( ( ( ! stateA1__S0 ) & ( ( ! hmastlock__S0 ) | ( hburst0__S0 ) | ( hburst1__S0 ) ) ) -> ( ( ! stateA1__S22 ) )) & ( ( ( ! stateA1__S0 ) & ( ( ! hmastlock__S0 ) | ( hburst0__S0 ) | ( hburst1__S0 ) ) ) -> ( ( ! stateA1__S22 ) )) & ( ( ( ! stateA1__S22 ) & ( ( ! hmastlock__S22 ) | ( hburst0__S22 ) | ( hburst1__S22 ) ) ) -> ( ( ! stateA1__S4 ) )) & ( ( ( ! stateA1__S4 ) & ( ( ! hmastlock__S4 ) | ( hburst0__S4 ) | ( hburst1__S4 ) ) ) -> ( ( ! stateA1__S5 ) )) & ( ( ( ! stateA1__S5 ) & ( ( ! hmastlock__S5 ) | ( hburst0__S5 ) | ( hburst1__S5 ) ) ) -> ( ( ! stateA1__S10 ) )) & ( ( ( ! stateA1__S10 ) & ( ( ! hmastlock__S10 ) | ( hburst0__S10 ) | ( hburst1__S10 ) ) ) -> ( ( ! stateA1__S9 ) )) & ( ( ( ! stateA1__S9 ) & ( ( ! hmastlock__S9 ) | ( hburst0__S9 ) | ( hburst1__S9 ) ) ) -> ( ( ! stateA1__S12 ) )) & ( ( ( ! stateA1__S12 ) & ( ( ! hmastlock__S12 ) | ( hburst0__S12 ) | ( hburst1__S12 ) ) ) -> ( ( ! stateA1__S5 ) ))&( ( ! hready__S0 ) -> ( ( ! start__S22 ) )) & ( ( ! hready__S0 ) -> ( ( ! start__S22 ) )) & ( ( ! hready__S22 ) -> ( ( ! start__S4 ) )) & ( ( ! hready__S4 ) -> ( ( ! start__S5 ) )) & ( ( ! hready__S5 ) -> ( ( ! start__S10 ) )) & ( ( ! hready__S10 ) -> ( ( ! start__S9 ) )) & ( ( ! hready__S9 ) -> ( ( ! start__S12 ) )) & ( ( ! hready__S12 ) -> ( ( ! start__S5 ) ))&( ( hready__S0 ) -> ( ( hgrant1__S0 ) <-> ( ( ( hmaster0__S22 ) ) ) )) & ( ( hready__S0 ) -> ( ( hgrant1__S0 ) <-> ( ( ( hmaster0__S22 ) ) ) )) & ( ( hready__S22 ) -> ( ( hgrant1__S22 ) <-> ( ( ( hmaster0__S4 ) ) ) )) & ( ( hready__S4 ) -> ( ( hgrant1__S4 ) <-> ( ( ( hmaster0__S5 ) ) ) )) & ( ( hready__S5 ) -> ( ( hgrant1__S5 ) <-> ( ( ( hmaster0__S10 ) ) ) )) & ( ( hready__S10 ) -> ( ( hgrant1__S10 ) <-> ( ( ( hmaster0__S9 ) ) ) )) & ( ( hready__S9 ) -> ( ( hgrant1__S9 ) <-> ( ( ( hmaster0__S12 ) ) ) )) & ( ( hready__S12 ) -> ( ( hgrant1__S12 ) <-> ( ( ( hmaster0__S5 ) ) ) ))&( ( ( ! start__S22 ) ) -> ( ( ( hmaster0__S0 ) ) <-> ( ( ( hmaster0__S22 ) ) ) )) & ( ( ( ! start__S22 ) ) -> ( ( ( hmaster0__S0 ) ) <-> ( ( ( hmaster0__S22 ) ) ) )) & ( ( ( ! start__S4 ) ) -> ( ( ( hmaster0__S22 ) ) <-> ( ( ( hmaster0__S4 ) ) ) )) & ( ( ( ! start__S5 ) ) -> ( ( ( hmaster0__S4 ) ) <-> ( ( ( hmaster0__S5 ) ) ) )) & ( ( ( ! start__S10 ) ) -> ( ( ( hmaster0__S5 ) ) <-> ( ( ( hmaster0__S10 ) ) ) )) & ( ( ( ! start__S9 ) ) -> ( ( ( hmaster0__S10 ) ) <-> ( ( ( hmaster0__S9 ) ) ) )) & ( ( ( ! start__S12 ) ) -> ( ( ( hmaster0__S9 ) ) <-> ( ( ( hmaster0__S12 ) ) ) )) & ( ( ( ! start__S5 ) ) -> ( ( ( hmaster0__S12 ) ) <-> ( ( ( hmaster0__S5 ) ) ) ))&((((!hmaster0__S5))|!hbusreq0__S5
+) | (((!hmaster0__S10))|!hbusreq0__S10
+) | (((!hmaster0__S9))|!hbusreq0__S9
+) | (((!hmaster0__S12))|!hbusreq0__S12
+))&((((hmaster0__S5))|!hbusreq1__S5
+) | (((hmaster0__S10))|!hbusreq1__S10
+) | (((hmaster0__S9))|!hbusreq1__S9
+) | (((hmaster0__S12))|!hbusreq1__S12
+))

@@ -1,0 +1,44 @@
+VAR
+start__S7_1,hburst0__S4_1,hburst0__S6_1,start__S5_1,stateG10_3__S0,hgrant7__S0,hmastlock__S4_1,hmaster2__S4,stateG2_6__S0,hmastlock__S6_1,hbusreq2__S7,hmaster0__S5_1,hmastlock__S4,hmastlock__S5,hmastlock__S6,hmastlock__S7,hmastlock__S0,hmastlock__S1,hmastlock__S2,hmastlock__S3,hbusreq2__S6,hmaster0__S7_1,hgrant0__S0,hgrant3__S0,hbusreq2__S5,stateA1__S3,hready__S6_1,start__S6_1,hburst0__S7_1,hburst1__S4_1,start__S4_1,hmaster2__S7,hmaster2__S6,hmaster2__S5,hburst1__S6_1,hmaster2__S3,hmaster2__S2,hmaster2__S1,hmaster2__S0,stateG3_1__S0,hmaster0__S5,hmaster0__S4,hmaster0__S7,hmaster0__S6,hmaster0__S1,hmaster0__S0,hmaster0__S3,hmaster0__S2,hmaster1__S7_1,stateG10_4__S0,hmaster2__S5_1,hbusreq2__S4,locked__S0,hready__S4,hready__S5,hmaster1__S4,hmaster1__S5,hmaster1__S6,hmaster1__S7,hmaster1__S0,hmaster1__S1,hmaster1__S2,hmaster1__S3,stateG2__S0,stateG10_5__S0,hburst0__S5_1,hready__S4_1,hgrant1__S0,stateG2_2__S0,hready__S0,hready__S1,hready__S2,hready__S3,hburst1__S5_1,stateA1__S6_1,hready__S6,hready__S7,hgrant5__S0,hmaster1__S5_1,hburst1__S7_1,stateA1__S4_1,hmaster2__S7_1,hmaster1__S6_1,stateA1__S5_1,hready__S5_1,stateG2_5__S0,busreq__S0,hgrant4__S0,hburst1__S3,hburst1__S2,hburst1__S1,hburst1__S0,hburst1__S7,decide__S0,hburst1__S5,hburst1__S4,stateG10_1__S0,hmaster2__S4_1,stateA1__S1,stateA1__S0,stateG2_1__S0,stateA1__S2,stateA1__S5,stateA1__S4,stateA1__S7,stateA1__S6,stateG2_3__S0,hgrant6__S0,stateG2_0__S0,start__S2,start__S3,start__S0,start__S1,start__S6,start__S7,start__S4,start__S5,stateG3_0__S0,hmastlock__S5_1,hmaster2__S6_1,stateA1__S7_1,hmaster1__S4_1,stateG2_4__S0,hmastlock__S7_1,stateG10_7__S0,hready__S7_1,stateG3_2__S0,stateG2_7__S0,hmaster0__S4_1,hgrant2__S0,stateG10_2__S0,hmaster0__S6_1,hburst0__S2,hburst0__S3,hburst0__S0,hburst0__S1,hburst0__S6,hburst0__S7,hburst0__S4,hburst0__S5,stateG10_6__S0,hburst1__S6: BOOLEAN
+FORMULA
+(!hmaster0__S0
+)&(!hmaster1__S0
+)&(!hmaster2__S0
+)&(!hmastlock__S0
+)&(start__S0
+)&(decide__S0
+)&(!locked__S0
+)&(hgrant0__S0
+)&(!hgrant1__S0
+)&(!hgrant2__S0
+)&(!hgrant3__S0
+)&(!hgrant4__S0
+)&(!hgrant5__S0
+)&(!hgrant6__S0
+)&(!hgrant7__S0
+)&(!busreq__S0
+)&(!stateA1__S0
+)&(!stateG2__S0
+)&(!stateG2_0__S0
+)&(!stateG2_1__S0
+)&(!stateG2_2__S0
+)&(!stateG2_3__S0
+)&(!stateG2_4__S0
+)&(!stateG2_5__S0
+)&(!stateG2_6__S0
+)&(!stateG2_7__S0
+)&(!stateG3_0__S0
+)&(!stateG3_1__S0
+)&(!stateG3_2__S0
+)&(!stateG10_1__S0
+)&(!stateG10_2__S0
+)&(!stateG10_3__S0
+)&(!stateG10_4__S0
+)&(!stateG10_5__S0
+)&(!stateG10_6__S0
+)&(!stateG10_7__S0
+)&( ( ( ! stateA1__S0 ) & ( ( ! hmastlock__S0 ) | ( hburst0__S0 ) | ( hburst1__S0 ) ) ) -> ( ( ! stateA1__S1 ) )) & ( ( ( ! stateA1__S1 ) & ( ( ! hmastlock__S1 ) | ( hburst0__S1 ) | ( hburst1__S1 ) ) ) -> ( ( ! stateA1__S2 ) )) & ( ( ( ! stateA1__S2 ) & ( ( ! hmastlock__S2 ) | ( hburst0__S2 ) | ( hburst1__S2 ) ) ) -> ( ( ! stateA1__S3 ) )) & ( ( ( ! stateA1__S3 ) & ( ( ! hmastlock__S3 ) | ( hburst0__S3 ) | ( hburst1__S3 ) ) ) -> ( ( ! stateA1__S4_1 ) )) & ( ( ( ! stateA1__S4_1 ) & ( ( ! hmastlock__S4_1 ) | ( hburst0__S4_1 ) | ( hburst1__S4_1 ) ) ) -> ( ( ! stateA1__S5_1 ) )) & ( ( ( ! stateA1__S5_1 ) & ( ( ! hmastlock__S5_1 ) | ( hburst0__S5_1 ) | ( hburst1__S5_1 ) ) ) -> ( ( ! stateA1__S6_1 ) )) & ( ( ( ! stateA1__S6_1 ) & ( ( ! hmastlock__S6_1 ) | ( hburst0__S6_1 ) | ( hburst1__S6_1 ) ) ) -> ( ( ! stateA1__S7_1 ) )) & ( ( ( ! stateA1__S7_1 ) & ( ( ! hmastlock__S7_1 ) | ( hburst0__S7_1 ) | ( hburst1__S7_1 ) ) ) -> ( ( ! stateA1__S4 ) )) & ( ( ( ! stateA1__S4 ) & ( ( ! hmastlock__S4 ) | ( hburst0__S4 ) | ( hburst1__S4 ) ) ) -> ( ( ! stateA1__S5 ) )) & ( ( ( ! stateA1__S5 ) & ( ( ! hmastlock__S5 ) | ( hburst0__S5 ) | ( hburst1__S5 ) ) ) -> ( ( ! stateA1__S6 ) )) & ( ( ( ! stateA1__S6 ) & ( ( ! hmastlock__S6 ) | ( hburst0__S6 ) | ( hburst1__S6 ) ) ) -> ( ( ! stateA1__S7 ) )) & ( ( ( ! stateA1__S7 ) & ( ( ! hmastlock__S7 ) | ( hburst0__S7 ) | ( hburst1__S7 ) ) ) -> ( ( ! stateA1__S4 ) ))&( ( ! hready__S0 ) -> ( ( ! start__S1 ) )) & ( ( ! hready__S1 ) -> ( ( ! start__S2 ) )) & ( ( ! hready__S2 ) -> ( ( ! start__S3 ) )) & ( ( ! hready__S3 ) -> ( ( ! start__S4_1 ) )) & ( ( ! hready__S4_1 ) -> ( ( ! start__S5_1 ) )) & ( ( ! hready__S5_1 ) -> ( ( ! start__S6_1 ) )) & ( ( ! hready__S6_1 ) -> ( ( ! start__S7_1 ) )) & ( ( ! hready__S7_1 ) -> ( ( ! start__S4 ) )) & ( ( ! hready__S4 ) -> ( ( ! start__S5 ) )) & ( ( ! hready__S5 ) -> ( ( ! start__S6 ) )) & ( ( ! hready__S6 ) -> ( ( ! start__S7 ) )) & ( ( ! hready__S7 ) -> ( ( ! start__S4 ) ))&( ( ( ! start__S1 ) ) -> ( ( ( ! hmaster0__S0 ) & ( hmaster1__S0 ) & ( ! hmaster2__S0 ) ) <-> ( ( ( ! hmaster0__S1 ) ) & ( ( hmaster1__S1 ) ) & ( ( ! hmaster2__S1 ) ) ) )) & ( ( ( ! start__S2 ) ) -> ( ( ( ! hmaster0__S1 ) & ( hmaster1__S1 ) & ( ! hmaster2__S1 ) ) <-> ( ( ( ! hmaster0__S2 ) ) & ( ( hmaster1__S2 ) ) & ( ( ! hmaster2__S2 ) ) ) )) & ( ( ( ! start__S3 ) ) -> ( ( ( ! hmaster0__S2 ) & ( hmaster1__S2 ) & ( ! hmaster2__S2 ) ) <-> ( ( ( ! hmaster0__S3 ) ) & ( ( hmaster1__S3 ) ) & ( ( ! hmaster2__S3 ) ) ) )) & ( ( ( ! start__S4_1 ) ) -> ( ( ( ! hmaster0__S3 ) & ( hmaster1__S3 ) & ( ! hmaster2__S3 ) ) <-> ( ( ( ! hmaster0__S4_1 ) ) & ( ( hmaster1__S4_1 ) ) & ( ( ! hmaster2__S4_1 ) ) ) )) & ( ( ( ! start__S5_1 ) ) -> ( ( ( ! hmaster0__S4_1 ) & ( hmaster1__S4_1 ) & ( ! hmaster2__S4_1 ) ) <-> ( ( ( ! hmaster0__S5_1 ) ) & ( ( hmaster1__S5_1 ) ) & ( ( ! hmaster2__S5_1 ) ) ) )) & ( ( ( ! start__S6_1 ) ) -> ( ( ( ! hmaster0__S5_1 ) & ( hmaster1__S5_1 ) & ( ! hmaster2__S5_1 ) ) <-> ( ( ( ! hmaster0__S6_1 ) ) & ( ( hmaster1__S6_1 ) ) & ( ( ! hmaster2__S6_1 ) ) ) )) & ( ( ( ! start__S7_1 ) ) -> ( ( ( ! hmaster0__S6_1 ) & ( hmaster1__S6_1 ) & ( ! hmaster2__S6_1 ) ) <-> ( ( ( ! hmaster0__S7_1 ) ) & ( ( hmaster1__S7_1 ) ) & ( ( ! hmaster2__S7_1 ) ) ) )) & ( ( ( ! start__S4 ) ) -> ( ( ( ! hmaster0__S7_1 ) & ( hmaster1__S7_1 ) & ( ! hmaster2__S7_1 ) ) <-> ( ( ( ! hmaster0__S4 ) ) & ( ( hmaster1__S4 ) ) & ( ( ! hmaster2__S4 ) ) ) )) & ( ( ( ! start__S5 ) ) -> ( ( ( ! hmaster0__S4 ) & ( hmaster1__S4 ) & ( ! hmaster2__S4 ) ) <-> ( ( ( ! hmaster0__S5 ) ) & ( ( hmaster1__S5 ) ) & ( ( ! hmaster2__S5 ) ) ) )) & ( ( ( ! start__S6 ) ) -> ( ( ( ! hmaster0__S5 ) & ( hmaster1__S5 ) & ( ! hmaster2__S5 ) ) <-> ( ( ( ! hmaster0__S6 ) ) & ( ( hmaster1__S6 ) ) & ( ( ! hmaster2__S6 ) ) ) )) & ( ( ( ! start__S7 ) ) -> ( ( ( ! hmaster0__S6 ) & ( hmaster1__S6 ) & ( ! hmaster2__S6 ) ) <-> ( ( ( ! hmaster0__S7 ) ) & ( ( hmaster1__S7 ) ) & ( ( ! hmaster2__S7 ) ) ) )) & ( ( ( ! start__S4 ) ) -> ( ( ( ! hmaster0__S7 ) & ( hmaster1__S7 ) & ( ! hmaster2__S7 ) ) <-> ( ( ( ! hmaster0__S4 ) ) & ( ( hmaster1__S4 ) ) & ( ( ! hmaster2__S4 ) ) ) ))&((((!hmaster0__S4)&(hmaster1__S4)&(!hmaster2__S4))|!hbusreq2__S4
+) | (((!hmaster0__S5)&(hmaster1__S5)&(!hmaster2__S5))|!hbusreq2__S5
+) | (((!hmaster0__S6)&(hmaster1__S6)&(!hmaster2__S6))|!hbusreq2__S6
+) | (((!hmaster0__S7)&(hmaster1__S7)&(!hmaster2__S7))|!hbusreq2__S7
+))

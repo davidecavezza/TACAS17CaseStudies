@@ -1,0 +1,19 @@
+VAR hready_0 : boolean
+VAR hready_1 : boolean
+VAR hready_2_1 : boolean
+VAR hready_3_1 : boolean
+VAR hbusreq1_2 : boolean
+VAR hready_2 : boolean
+VAR hbusreq1_3 : boolean
+DEFINE def_2 := !(hready_0)
+DEFINE def_92 := !(hready_1)
+DEFINE def_106 := !(hready_2_1)
+DEFINE def_120 := !(hready_3_1)
+DEFINE def_133 := !(hready_2)
+DEFINE def_447 := (def_133 & def_120)
+DEFINE def_448 := (def_447 & def_106)
+DEFINE def_449 := (def_448 & def_92)
+DEFINE def_450 := (def_449 & def_2)
+DEFINE def_451 := (def_450 & hbusreq1_2)
+DEFINE def_452 := (def_451 & hbusreq1_3)
+FORMULA def_452

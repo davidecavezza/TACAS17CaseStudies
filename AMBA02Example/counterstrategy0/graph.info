@@ -1,0 +1,80 @@
+--------  S0:  ----------
+current hready is: 0
+current hbusreq0 is: 0
+current hlock0 is: 0
+current hbusreq1 is: 0
+current hlock1 is: 0
+current hburst0 is: 0
+current hburst1 is: 0
+current hmaster0 is: 0
+current hmastlock is: 0
+current start is: 1
+current stateA1 is: 0
+indices of environment fairness conditions fulfilled: 0
+indices of system fairness conditions fulfilled: 0
+The environment tries to fulfill fairness condition nr 0 next
+I have not decided yet which fairness condition of the system I will try to evade
+--------  S1:  ----------
+current hready is: 0
+current hbusreq0 is: 1
+current hlock0 is: 1
+current hbusreq1 is: 1
+current hlock1 is: 1
+current hburst0 is: 1
+current hburst1 is: 1
+current hmaster0 is: 0
+current hmastlock is: 0
+current start is: 0
+current stateA1 is: 0
+indices of environment fairness conditions fulfilled: 0
+indices of system fairness conditions fulfilled: 
+The environment tries to fulfill fairness condition nr 0 next
+I have not decided yet which fairness condition of the system I will try to evade
+--------  S2:  ----------
+current hready is: 0
+current hbusreq0 is: 1
+current hlock0 is: 1
+current hbusreq1 is: 1
+current hlock1 is: 1
+current hburst0 is: 1
+current hburst1 is: 1
+current hmaster0 is: 0
+current hmastlock is: 0
+current start is: 0
+current stateA1 is: 0
+indices of environment fairness conditions fulfilled: 0
+indices of system fairness conditions fulfilled: 
+The environment tries to fulfill fairness condition nr 0 next
+I try to keep the system from fulfilling fairness condition nr: 0
+--------  S3:  ----------
+current hready is: 0
+current hbusreq0 is: 1
+current hlock0 is: 1
+current hbusreq1 is: 1
+current hlock1 is: 1
+current hburst0 is: 1
+current hburst1 is: 1
+current hmaster0 is: 0
+current hmastlock is: 1
+current start is: 0
+current stateA1 is: 0
+indices of environment fairness conditions fulfilled: 0
+indices of system fairness conditions fulfilled: 
+The environment tries to fulfill fairness condition nr 0 next
+I try to keep the system from fulfilling fairness condition nr: 0
+--------  S4:  ----------
+current hready is: 0
+current hbusreq0 is: 1
+current hlock0 is: 1
+current hbusreq1 is: 1
+current hlock1 is: 1
+current hburst0 is: 1
+current hburst1 is: 1
+current hmaster0 is: 0
+current hmastlock is: 1
+current start is: 0
+current stateA1 is: 0
+indices of environment fairness conditions fulfilled: 0
+indices of system fairness conditions fulfilled: 
+The environment tries to fulfill fairness condition nr 0 next
+I have not decided yet which fairness condition of the system I will try to evade

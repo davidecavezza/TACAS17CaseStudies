@@ -1,0 +1,25 @@
+VAR hready_0 : boolean
+VAR hready_1 : boolean
+VAR hready_2_1 : boolean
+VAR hready_3_1 : boolean
+VAR hready_2_2 : boolean
+VAR hready_3_2 : boolean
+VAR hbusreq1_2 : boolean
+VAR hready_2 : boolean
+VAR hbusreq1_3 : boolean
+DEFINE def_2 := !(hready_0)
+DEFINE def_112 := !(hready_1)
+DEFINE def_126 := !(hready_2_1)
+DEFINE def_140 := !(hready_3_1)
+DEFINE def_153 := !(hready_2_2)
+DEFINE def_167 := !(hready_3_2)
+DEFINE def_180 := !(hready_2)
+DEFINE def_581 := (def_180 & def_167)
+DEFINE def_582 := (def_581 & def_153)
+DEFINE def_583 := (def_582 & def_140)
+DEFINE def_584 := (def_583 & def_126)
+DEFINE def_585 := (def_584 & def_112)
+DEFINE def_586 := (def_585 & def_2)
+DEFINE def_587 := (def_586 & hbusreq1_2)
+DEFINE def_588 := (def_587 & hbusreq1_3)
+FORMULA def_588

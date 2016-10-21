@@ -1,0 +1,24 @@
+VAR
+hready__S23,hgrant1__S0,hgrant1__S2,start__S2,start__S0,hburst0__S23,stateG3_0__S0,hbusreq0__S16,hbusreq1__S2,stateA1__S23,hready__S0,hgrant1__S23,hready__S2,hmaster0__S2,hmastlock__S16,hburst1__S23,stateA1__S16,hbusreq0__S2,start__S16,stateG3_1__S0,stateG3_2__S0,hmaster0__S0,busreq__S0,hmaster0__S23,hburst1__S2,hburst0__S16,hburst1__S0,hmastlock__S0,decide__S0,hmastlock__S2,locked__S0,stateG10_1__S0,hgrant1__S16,hgrant0__S0,hmaster0__S16,hbusreq1__S16,stateG2__S0,stateA1__S0,stateG2_1__S0,stateA1__S2,hmastlock__S23,hburst0__S2,hburst1__S16,hburst0__S0,stateG2_0__S0,start__S23,hready__S16: BOOLEAN
+FORMULA
+(!hmaster0__S0
+)&(!hmastlock__S0
+)&(start__S0
+)&(decide__S0
+)&(!locked__S0
+)&(hgrant0__S0
+)&(!hgrant1__S0
+)&(!busreq__S0
+)&(!stateA1__S0
+)&(!stateG2__S0
+)&(!stateG2_0__S0
+)&(!stateG2_1__S0
+)&(!stateG3_0__S0
+)&(!stateG3_1__S0
+)&(!stateG3_2__S0
+)&(!stateG10_1__S0
+)&( ( ( ! stateA1__S0 ) & ( ( ! hmastlock__S0 ) | ( hburst0__S0 ) | ( hburst1__S0 ) ) ) -> ( ( ! stateA1__S23 ) )) & ( ( ( ! stateA1__S0 ) & ( ( ! hmastlock__S0 ) | ( hburst0__S0 ) | ( hburst1__S0 ) ) ) -> ( ( ! stateA1__S23 ) )) & ( ( ( ! stateA1__S23 ) & ( ( ! hmastlock__S23 ) | ( hburst0__S23 ) | ( hburst1__S23 ) ) ) -> ( ( ! stateA1__S2 ) )) & ( ( ( ! stateA1__S2 ) & ( ( ! hmastlock__S2 ) | ( hburst0__S2 ) | ( hburst1__S2 ) ) ) -> ( ( ! stateA1__S16 ) )) & ( ( ( ! stateA1__S16 ) & ( ( ! hmastlock__S16 ) | ( hburst0__S16 ) | ( hburst1__S16 ) ) ) -> ( ( ! stateA1__S2 ) ))&( ( ! hready__S0 ) -> ( ( ! start__S23 ) )) & ( ( ! hready__S0 ) -> ( ( ! start__S23 ) )) & ( ( ! hready__S23 ) -> ( ( ! start__S2 ) )) & ( ( ! hready__S2 ) -> ( ( ! start__S16 ) )) & ( ( ! hready__S16 ) -> ( ( ! start__S2 ) ))&( ( hready__S0 ) -> ( ( hgrant1__S0 ) <-> ( ( ( hmaster0__S23 ) ) ) )) & ( ( hready__S0 ) -> ( ( hgrant1__S0 ) <-> ( ( ( hmaster0__S23 ) ) ) )) & ( ( hready__S23 ) -> ( ( hgrant1__S23 ) <-> ( ( ( hmaster0__S2 ) ) ) )) & ( ( hready__S2 ) -> ( ( hgrant1__S2 ) <-> ( ( ( hmaster0__S16 ) ) ) )) & ( ( hready__S16 ) -> ( ( hgrant1__S16 ) <-> ( ( ( hmaster0__S2 ) ) ) ))&( ( ( ! start__S23 ) ) -> ( ( ( hmaster0__S0 ) ) <-> ( ( ( hmaster0__S23 ) ) ) )) & ( ( ( ! start__S23 ) ) -> ( ( ( hmaster0__S0 ) ) <-> ( ( ( hmaster0__S23 ) ) ) )) & ( ( ( ! start__S2 ) ) -> ( ( ( hmaster0__S23 ) ) <-> ( ( ( hmaster0__S2 ) ) ) )) & ( ( ( ! start__S16 ) ) -> ( ( ( hmaster0__S2 ) ) <-> ( ( ( hmaster0__S16 ) ) ) )) & ( ( ( ! start__S2 ) ) -> ( ( ( hmaster0__S16 ) ) <-> ( ( ( hmaster0__S2 ) ) ) ))&((((!hmaster0__S2))|!hbusreq0__S2
+) | (((!hmaster0__S16))|!hbusreq0__S16
+))&((((hmaster0__S2))|!hbusreq1__S2
+) | (((hmaster0__S16))|!hbusreq1__S16
+))

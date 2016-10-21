@@ -1,0 +1,18 @@
+!hready
+!hbusreq0
+!hlock0
+!hbusreq1
+!hlock1
+!hbusreq2
+!hlock2
+!hbusreq3
+!hlock3
+!hburst0
+!hburst1
+G(hlock0->hbusreq0)
+G(hlock1->hbusreq1)
+G(hlock2->hbusreq2)
+G(hlock3->hbusreq3)
+G(F(!stateA1))
+G(F(hmaster0 | !hbusreq3))
+G(F(!hbusreq2 | hmaster1))

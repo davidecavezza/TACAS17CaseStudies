@@ -1,0 +1,30 @@
+VAR hmaster0__S8 : boolean
+VAR hmaster0__S9 : boolean
+VAR hmaster0__S6 : boolean
+VAR hbusreq1__S9 : boolean
+VAR hbusreq1__S8 : boolean
+VAR hbusreq1__S7 : boolean
+VAR hbusreq1__S6 : boolean
+VAR hbusreq1__S5 : boolean
+VAR hbusreq1__S4 : boolean
+VAR hmaster0__S7 : boolean
+VAR hmaster0__S4 : boolean
+VAR hmaster0__S5 : boolean
+DEFINE def_1050 := !(hmaster0__S9)
+DEFINE def_1077 := !(hmaster0__S8)
+DEFINE def_1242 := !(hmaster0__S7)
+DEFINE def_1270 := !(hmaster0__S6)
+DEFINE def_1301 := !(hmaster0__S5)
+DEFINE def_1331 := !(hmaster0__S4)
+DEFINE def_2781 := (def_1331 & def_1301)
+DEFINE def_2782 := (def_2781 & def_1270)
+DEFINE def_2783 := (def_2782 & def_1242)
+DEFINE def_2784 := (def_2783 & def_1077)
+DEFINE def_2785 := (def_2784 & def_1050)
+DEFINE def_2786 := (def_2785 & hbusreq1__S9)
+DEFINE def_2787 := (def_2786 & hbusreq1__S8)
+DEFINE def_2788 := (def_2787 & hbusreq1__S7)
+DEFINE def_2789 := (def_2788 & hbusreq1__S6)
+DEFINE def_2790 := (def_2789 & hbusreq1__S5)
+DEFINE def_2791 := (def_2790 & hbusreq1__S4)
+FORMULA def_2791

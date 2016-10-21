@@ -1,0 +1,7 @@
+VAR hready__S1 : boolean
+VAR hbusreq1__S2 : boolean
+VAR hgrant1__S1 : boolean
+DEFINE def_79 := !(hgrant1__S1)
+DEFINE def_300 := (def_79 & hbusreq1__S2)
+DEFINE def_301 := (def_300 & hready__S1)
+FORMULA def_301
