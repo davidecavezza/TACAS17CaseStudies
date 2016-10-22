@@ -1,0 +1,3 @@
+hlock0->hbusreq0
+hlock1->hbusreq1
+(!hmaster0 & !hready & hbusreq1) -> X(!hbusreq1)

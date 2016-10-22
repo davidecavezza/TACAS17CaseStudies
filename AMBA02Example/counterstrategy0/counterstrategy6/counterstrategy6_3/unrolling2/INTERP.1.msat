@@ -1,0 +1,14 @@
+VAR hready__S2 : boolean
+VAR hgrant1__S3_2 : boolean
+VAR hbusreq1__S2 : boolean
+VAR hready__S3_2 : boolean
+VAR hbusreq1__S3 : boolean
+VAR hgrant1__S2 : boolean
+DEFINE def_159 := !(hgrant1__S2)
+DEFINE def_228 := !(hgrant1__S3_2)
+DEFINE def_772 := (def_228 & def_159)
+DEFINE def_773 := (def_772 & hbusreq1__S3)
+DEFINE def_774 := (def_773 & hready__S2)
+DEFINE def_775 := (def_774 & hbusreq1__S2)
+DEFINE def_776 := (def_775 & hready__S3_2)
+FORMULA def_776

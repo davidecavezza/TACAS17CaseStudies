@@ -740,14 +740,6 @@
       <toggled>1</toggled>
     </requirement>
     <requirement>
-      <name>env fair 1</name>
-      <property>G(F(hready=1))</property>
-      <kind>A</kind>
-      <base_automaton_name></base_automaton_name>
-      <notes></notes>
-      <toggled>0</toggled>
-    </requirement>
-    <requirement>
       <name>sys fair 0</name>
       <property>G(F(stateG2=0))</property>
       <kind>G</kind>
@@ -873,6 +865,86 @@
       <kind>A</kind>
       <base_automaton_name></base_automaton_name>
       <notes>There is a projection onto input variables in this refinement</notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_1_1</name>
+      <property>G(X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_1_2</name>
+      <property>G((!hgrant1 &amp; hbusreq1 &amp; hready) -&gt; X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_1_3</name>
+      <property>G((!hgrant1 &amp; hready) -&gt; X(!hbusreq1))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_1_4</name>
+      <property>G(hbusreq1 -&gt; X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_1_5</name>
+      <property>G(F(hgrant1 | !hready | !hbusreq1))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_3_1</name>
+      <property>G(X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_3_2</name>
+      <property>G((!hgrant1 &amp; hbusreq1 &amp; hready) -&gt; X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_3_3</name>
+      <property>G((!hgrant1 &amp; hready) -&gt; X(!hbusreq1))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_3_4</name>
+      <property>G(hbusreq1 -&gt; X(!hready))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
+      <toggled>0</toggled>
+    </requirement>
+    <requirement>
+      <name>ref6_3_5</name>
+      <property>G(F(hgrant1 | !hready | !hbusreq1))</property>
+      <kind>A</kind>
+      <base_automaton_name></base_automaton_name>
+      <notes></notes>
       <toggled>0</toggled>
     </requirement>
     <requirement>
